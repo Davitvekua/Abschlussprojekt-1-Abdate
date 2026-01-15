@@ -15,10 +15,31 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+nav {
+  width: 100vw;
+  height: 9vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.verlinkungen {
+  padding: 0 3vw 0 3vw;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.verlinkungen:hover {
+  color: #ff3030;
+}
 .hero {
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  height: 91vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +99,10 @@ p.subtitle {
 }
 
 @media only screen and (min-width: 1000px) {
+  .verlinkungen {
+    font-size: 1rem;
+  }
+
   h1.title {
     line-height: 5rem;
     font-size: 4.5rem;
