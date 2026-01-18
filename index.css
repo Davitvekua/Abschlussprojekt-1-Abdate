@@ -44,7 +44,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("Georgische-Kueche.jpg");
   background-size: cover;
   background-position: center;
@@ -66,20 +67,39 @@ p.subtitle {
   color: #ddd;
 }
 
-.hero-action {
+.button {
   font-size: 1.25rem;
   background-color: #ff3030;
-  padding: 1%;
+  padding: 1rem 2rem;
   color: #fff;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-.hero-action:hover {
+.button:hover {
   background-color: transparent;
   border: 2px solid #ff3030;
 }
-
+.heading {
+  margin: 2rem 0 1rem 0;
+  border-bottom: 1px #ff3030 solid;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  width: fit-content;
+}
+.beschreibung {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+.zweite-seite {
+  width: fit-content;
+  margin-top: 2rem;
+}
+.ueber-uns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
 @media only screen and (min-width: 600px) {
   h1.title {
     line-height: 4rem;
