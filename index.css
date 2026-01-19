@@ -123,6 +123,40 @@ p.subtitle {
   display: grid;
   gap: 2rem;
 }
+.oeffnungszeiten {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./khinkali.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.abc {
+  margin: 3rem auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: max-content;
+  max-width: max-content;
+}
+.schedule {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tage {
+  text-align: left;
+  color: #ddd;
+}
+.zeit {
+  text-align: right;
+  color: var(--text-farbe);
+}
+.oz {
+  width: 100%;
+}
 @media only screen and (min-width: 600px) {
   h1.title {
     line-height: 4rem;
