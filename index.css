@@ -70,18 +70,30 @@ p.subtitle {
 .button {
   display: inline-block;
   font-size: 1.25rem;
-  background-color: #ff3030;
+  background-color: var(--haupt-farbe);
   padding: 1rem 2rem;
   color: #fff;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
-
+.anrufen {
+  width: fit-content;
+}
+.email {
+  width: fit-content;
+  background-color: transparent;
+  color: var(--haupt-farbe);
+  border: 2px solid var(--haupt-farbe);
+}
 .button:hover {
   background-color: transparent;
-  border: 2px solid #ff3030;
+  border: 2px solid var(--haupt-farbe);
+  color: var(--haupt-farbe);
 }
-
+.email:hover {
+  background-color: var(--haupt-farbe);
+  color: #fff;
+}
 .container {
   max-width: 85%;
   margin: 0 auto;
@@ -157,6 +169,28 @@ p.subtitle {
   width: 100%;
   letter-spacing: 0.15rem;
 }
+.sub-kontakt {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.kontakt .heading {
+  margin-top: 0;
+}
+.kontakt-info {
+  line-height: 1.8rem;
+  color: var(--text-farbe);
+}
+.kontakt-buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.kontakt-bild {
+  width: 100%;
+}
+
 @media only screen and (min-width: 600px) {
   h1.title {
     line-height: 4rem;
@@ -175,6 +209,24 @@ p.subtitle {
   }
   .beschreibung {
     font-size: 1rem;
+  }
+  .sub-kontakt {
+    flex-direction: row;
+    align-items: center;
+  }
+  .kontakt-bild {
+    width: 50%;
+  }
+  .kontakt-daten {
+    margin: auto;
+  }
+  .kontakt-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .anrufen,
+  .email {
+    padding: 1rem 0.8rem;
   }
 }
 
@@ -213,6 +265,13 @@ p.subtitle {
   .tage {
     font-size: 1.2rem;
     line-height: 1.6;
+  }
+  .kontakt-daten .heading {
+    margin-bottom: 2rem;
+  }
+  .kontakt-info {
+    font-size: 1.2rem;
+    margin-top: 1rem;
   }
 }
 
