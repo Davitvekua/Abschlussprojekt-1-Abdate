@@ -5,9 +5,7 @@
   margin: 0;
   padding: 0;
 }
-.test {
-  height: 300vh;
-}
+
 body {
   background-color: #1a1a1a;
   color: #fff;
@@ -190,7 +188,25 @@ p.subtitle {
 .kontakt-bild {
   width: 100%;
 }
-
+footer {
+  background-color: #303030;
+  margin-top: 2rem;
+}
+.footer-verlinkungen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+.copyright {
+  text-align: center;
+  padding: 1rem 0 1.5rem 0;
+  font-size: 0.8rem;
+  color: var(--text-farbe);
+}
 @media only screen and (min-width: 600px) {
   h1.title {
     line-height: 4rem;
@@ -227,6 +243,18 @@ p.subtitle {
   .anrufen,
   .email {
     padding: 1rem 0.8rem;
+  }
+  .footer-verlinkungen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  footer {
+    padding: 0.5rem;
   }
 }
 
@@ -278,5 +306,8 @@ p.subtitle {
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 1200px;
+  }
+  footer {
+    padding: 1.5rem 0 1.2rem;
   }
 }
